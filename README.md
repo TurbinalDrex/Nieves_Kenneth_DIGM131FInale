@@ -4,6 +4,7 @@ Code that Deletes history and Freezes Transforms (With options for NOT deleting 
 
 Tool Is Designed for animators, riggers, and modelers who need safer scene scleanup operations without accidentally breaking rigs or deformational systems.
 
+
 -PLANNED FEATURES-
 
 (Week 6) Core Features _ COMPLETED
@@ -18,14 +19,19 @@ Tool Is Designed for animators, riggers, and modelers who need safer scene sclea
 
 (Week 10) Polish/Documentation _ WIP
 
+
 -STRUCTURE OF PROJECT-
 
 Safe_Cleanup_Tool/
 
 Config_Data.py          # Core Cleanups Functions (BASIC cmds Logic)
+
 Data_Driven_Config.py   # Preset Configs (Data-Driven Settings)
+
 main.py                 # Entry Point For Running the Tool
+
 README.md               # Project Doc
+
 
 -Functions I NEED to write-
 
@@ -36,6 +42,7 @@ delete_non_deformer_history(obj_name)
 delete_all_history(obj_name)
 
 safe_cleanup(obj_name)
+
 
 -HOW TO RUN-
 
