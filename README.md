@@ -30,8 +30,11 @@ README.md               # Project Doc
 -Functions I NEED to write-
 
 freeze_transforms(obj_name)
+
 delete_non_deformer_history(obj_name)
+
 delete_all_history(obj_name)
+
 safe_cleanup(obj_name)
 
 -HOW TO RUN-
