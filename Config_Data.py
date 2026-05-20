@@ -9,7 +9,9 @@ SAFE_CLEANUP_DEFAULTS = {
     "delete_history": True,
     "preserve_deformers": True
 }
-
+"""
+Defined Functions
+"""
 def freeze_transforms(obj_name):
     cmds.makeIdentity(obj_name, apply=True, translate=True,
                       rotate=True, scale=True, normal=False)
