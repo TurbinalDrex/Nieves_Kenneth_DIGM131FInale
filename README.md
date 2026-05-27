@@ -46,7 +46,15 @@ safe_cleanup(obj_name)
 
 -HOW TO RUN-
 
-1. Load project folder into maya's script path
-2. select an object in scene
-3. run 'main.py'
-4. Tool will perform a safe cleanup on selected object
+1. Copy the folder:
+   BasicMayaCleanUpTool_KennethNieves
+
+2. Paste into:
+   Documents/maya/scripts/
+
+3. Open Maya Script Editor (Python mode)
+
+4. Run:
+
+import BasicMayaCleanUpTool_KennethNieves.main as main
+main.launch_ui()
