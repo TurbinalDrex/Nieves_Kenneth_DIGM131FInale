@@ -1,5 +1,9 @@
 import maya.cmds as cmds
-from PySide2 import QtWidgets
+
+import os
+import sys
+
+from PySide6 import QtWidgets
 
 import Config_Data as tool
 import Data_Driven_Config as config
@@ -20,10 +24,6 @@ _THIS_DIR = os.path.dirname(
 if _THIS_DIR not in sys.path:
 
     sys.path.insert(0, _THIS_DIR)
-
-
-import Config_Data as tool
-import Data_Driven_Config as config
 
 """
 Driver Looper
