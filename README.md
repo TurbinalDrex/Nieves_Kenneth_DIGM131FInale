@@ -47,4 +47,5 @@ README.md               # Project Doc
 4. Run:
 
 import BasicMayaCleanUpTool_KennethNieves.main as main
+
 main.launch_ui()
