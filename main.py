@@ -5,9 +5,6 @@ import sys
 
 from PySide6 import QtWidgets
 
-import Config_Data as tool
-import Data_Driven_Config as config
-
 """
 Entry point for Safe Cleanup Tool.
 By Kenneth Nieves
@@ -25,6 +22,8 @@ if _THIS_DIR not in sys.path:
 
     sys.path.insert(0, _THIS_DIR)
 
+import Config_Data as tool
+import Data_Driven_Config as config
 """
 Driver Looper
 """
@@ -120,4 +119,5 @@ Self Test
 """
 
 if __name__ == "__main__":
-    run_cleanup()
+
+    launch_ui()
