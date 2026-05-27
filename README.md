@@ -32,7 +32,10 @@ main.py                 # Entry Point For Running the Tool
 
 README.md               # Project Doc
 
-
+-Issues Still need to fix/Maybe Add-
+Defmormer still being adjusted when using safe mode
+Possible Options to close window when done with tool
+a quick shelf button that Does safe mode regardless without the UI
 
 -HOW TO RUN-
 
