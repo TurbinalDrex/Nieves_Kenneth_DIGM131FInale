@@ -4,15 +4,45 @@ import maya.cmds as cmds
 Config presets for Safe Cleanup Tool
 """
 
-CLEANUP_PRESETS = {
-    "safe_mode": {
-        "freeze_transforms": True,
-        "delete_history": True,
-        "preserve_deformers": True
+CLEANUP_CONFIG = [
+
+    {
+        "type": "freeze",
+        "object": "pCube1"
     },
-    "rig_safe": {
-        "freeze_transforms": True,
-        "delete_history": False,
-        "preserve_deformers": True
+
+    {
+        "type": "safe_delete",
+        "object": "pCube1"
+    },
+
+    {
+        "type": "freeze",
+        "object": "pSphere1"
+    },
+
+    {
+        "type": "safe_delete",
+        "object": "pSphere1"
+    },
+
+    {
+        "type": "full_delete",
+        "object": "pCylinder1"
+    },
+
+    {
+        "type": "freeze",
+        "object": "pCylinder1"
+    },
+
+    {
+        "type": "safe_cleanup",
+        "object": "pTorus1"
+    },
+
+    {
+        "type": "freeze",
+        "object": "pTorus1"
     }
-}
+]
