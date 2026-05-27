@@ -11,11 +11,11 @@ Tool Is Designed for animators, riggers, and modelers who need safer scene sclea
 
 (Week 7) Data-Driven Config System _ COMPLETED
 
-(Week 7) Error handling + Debug Mode _ WIP
+(Week 7) Error handling + Debug Mode _ COMPLETED
 
-(Week 9) Maya UI window _ WIP
+(Week 9) Maya UI window _ COMPLETED
 
-(Week 9) JSON Save/Load Presets _ WIP
+(Week 9) JSON Save/Load Presets _ COMPLETED
 
 (Week 10) Polish/Documentation _ WIP
 
