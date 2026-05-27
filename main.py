@@ -6,7 +6,7 @@ import sys
 from PySide6 import QtWidgets
 
 import Config_Data as tool
-import Data_Driven_Config as config
+import Data-Driven_Config as config
 
 """
 Entry point for Safe Cleanup Tool.
