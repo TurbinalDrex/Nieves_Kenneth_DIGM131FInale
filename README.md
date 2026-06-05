@@ -43,7 +43,7 @@ a quick shelf button that Does safe mode regardless without the UI
    BasicMayaCleanUpTool_KennethNieves
 
 2. Paste into:
-   Documents/maya/scripts/
+   Documents/maya/2026/scripts/
 
 3. Open Maya Script Editor (Python mode)
 
