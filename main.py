@@ -1,14 +1,16 @@
+"""
+Safe Cleanup Tool
+
+Main entry point and user interface.
+By Kenneth Nieves
+"""
+
 import maya.cmds as cmds
 
 import os
 import sys
 
 from PySide6 import QtWidgets
-
-"""
-Entry point for Safe Cleanup Tool.
-By Kenneth Nieves
-"""
 
 """
 Module Set-Up
