@@ -2,6 +2,7 @@
 Data-driven cleanup configuration
 for the Safe Cleanup Tool.
 """
+
 import maya.cmds as cmds
 
 CLEANUP_CONFIG = [
