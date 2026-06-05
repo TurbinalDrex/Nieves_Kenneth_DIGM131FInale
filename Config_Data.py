@@ -186,6 +186,14 @@ def create_element(data):
 
     try:
 
+        if "type" not in data:
+       
+            cmds.warning(
+                "Operation data missing 'type' key."
+            )
+        
+            return
+        
         operation_type = data.get("type")
 
         builder = BUILDERS.get(operation_type)
