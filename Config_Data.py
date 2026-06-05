@@ -3,6 +3,7 @@ Core cleanup operations and
 dispatcher functions for the
 Safe Cleanup Tool.
 """
+
 import maya.cmds as cmds
  
 DEBUG = True
