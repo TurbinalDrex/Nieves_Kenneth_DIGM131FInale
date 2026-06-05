@@ -45,7 +45,7 @@ a quick shelf button that Does safe mode regardless without the UI
 2. Paste into:
    Documents/maya/2026/scripts/
 
-3. Open Maya Script Editor (Python mode)
+3. Open Maya Script Editor (Python mode) (NOT MEL)
 
 4. Run:
 
