@@ -1,8 +1,8 @@
+"""
+Data-driven cleanup configuration
+for the Safe Cleanup Tool.
+"""
 import maya.cmds as cmds
-
-"""
-Config presets for Safe Cleanup Tool
-"""
 
 CLEANUP_CONFIG = [
 
