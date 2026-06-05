@@ -1,9 +1,13 @@
 import maya.cmds as cmds
 
+# Suggestion: Your module docstrings should be at the very top of the file before your import
+
 """
 Static configuration settings for Safe Cleanup Tool (Found/Refrences in Maya and Qt For Python Docs)
 """
- 
+
+# Suggestion: Typo in docstring, "Refrences" should be "References"
+
 DEBUG = True
 
 SAFE_CLEANUP_DEFAULTS = {
@@ -14,6 +18,10 @@ SAFE_CLEANUP_DEFAULTS = {
 """
 Builder Functions
 """
+
+# Suggestion: ^You can just frame these like inline comments as opposed to treating it
+# like a docstring.
+
 def freeze_transforms(data,
                       translate=True,
                       rotate=True,
@@ -22,6 +30,8 @@ def freeze_transforms(data,
     """
     Freezes the Transforms on an object
     """
+
+    #Suggestion: Fix docstring, explain your paramaters
 
     try:
 
@@ -61,10 +71,15 @@ def delete_non_deformer_history(data,
     """
     Delete Non-deformer History Safely.
     """
+# Suggestion: Fix Docstring
 
     try:
 
         obj_name = data.get("object")
+
+        if not obj_name:
+            cmds.warning(f"No object key in data")
+            return
 
         if not cmds.objExists(obj_name):
 
@@ -95,6 +110,8 @@ def delete_all_history(data):
     """
     Delete All Contruction History
     """
+    # Suggestion: Typo, "Contruction" should be "Construction"
+    # Suggestion: Missing a blank line between this function and the one above, PEP 8 formatting error
     try:
 
         obj_name = data.get("object")
@@ -128,7 +145,8 @@ def delete_all_history(data):
 
 def safe_cleanup(data,
                  freeze=True,
-                 delete_history=True):
+                 delete_history=True,
+                 full_delete=False):
     """
     Perform combined safe cleanup.
     """
@@ -139,8 +157,11 @@ def safe_cleanup(data,
 
             freeze_transforms(data)
 
-        if delete_history:
+        if full_delete:
 
+            delete_all_history(data)
+
+        elif delete_history:
             delete_non_deformer_history(data)
 
         if DEBUG:
@@ -161,6 +182,7 @@ def safe_cleanup(data,
 Builder Dispatcher Dictionary
 """
 
+#Suggestion: Could just be another inline comment, not a docstring format
 
 BUILDERS = {
 
