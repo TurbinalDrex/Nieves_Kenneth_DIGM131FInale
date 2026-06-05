@@ -185,6 +185,13 @@ def create_element(data):
     """
 
     try:
+        if "object" not in data:
+
+            cmds.warning(
+                "Operation data missing 'object' key."
+            )
+        
+            return
 
         if "type" not in data:
        
