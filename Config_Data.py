@@ -20,7 +20,23 @@ def freeze_transforms(data,
                       scale=True):
 
     """
-    Freezes the Transforms on an object
+   Freezes transforms on a Maya object.
+   
+   Args:
+       data (dict):
+           Contains object information.
+   
+       translate (bool):
+           Freeze translation values.
+   
+       rotate (bool):
+           Freeze rotation values.
+   
+       scale (bool):
+           Freeze scale values.
+   
+   Returns:
+        None
     """
 
     try:
@@ -176,7 +192,15 @@ BUILDERS = {
 
 
 """
-Dispatcher Function
+Dispatches cleanup operations using the
+builder dictionary.
+
+Args:
+    data (dict):
+        Cleanup operation information.
+
+Returns:
+    None
 """
 
 def create_element(data):
