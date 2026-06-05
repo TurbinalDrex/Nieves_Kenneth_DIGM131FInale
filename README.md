@@ -17,7 +17,7 @@ Tool Is Designed for animators, riggers, and modelers who need safer scene sclea
 
 (Week 9) JSON Save/Load Presets _ COMPLETED
 
-(Week 10) Polish/Documentation _ WIP
+(Week 10) Polish/Documentation _ COMPLETED
 
 
 -STRUCTURE OF PROJECT-
