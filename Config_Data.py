@@ -1,8 +1,9 @@
+"""
+Core cleanup operations and
+dispatcher functions for the
+Safe Cleanup Tool.
+"""
 import maya.cmds as cmds
-
-"""
-Static configuration settings for Safe Cleanup Tool (Found/Refrences in Maya and Qt For Python Docs)
-"""
  
 DEBUG = True
 
