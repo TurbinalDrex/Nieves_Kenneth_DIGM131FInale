@@ -28,7 +28,13 @@ import Data_Driven_Config as config
 Driver Looper
 """
 def run_cleanup_pipeline():
-
+    """
+    Runs all cleanup operations defined
+    in the data-driven configuration file.
+    
+    Returns:
+        None
+    """
     for cleanup_operation in config.CLEANUP_CONFIG:
 
         tool.create_element(
@@ -38,7 +44,12 @@ def run_cleanup_pipeline():
 Qt Window
 """
 class CleanupWindow(QtWidgets.QWidget):
+    """
+    Main UI window for the Safe Cleanup Tool.
 
+    Allows users to perform safe cleanup
+    operations on selected Maya objects.
+    """
     def __init__(self):
 
         super(CleanupWindow, self).__init__()
@@ -74,7 +85,13 @@ class CleanupWindow(QtWidgets.QWidget):
         self.setLayout(layout)
 
     def run_cleanup(self):
-
+        """
+        Executes safe cleanup on all currently
+        selected Maya objects.
+    
+        Returns:
+            None
+        """
         selection = cmds.ls(selection=True)
 
         if not selection:
@@ -99,7 +116,15 @@ Launch UI
 window = None
 
 def launch_ui():
+    """
+    Creates and displays the cleanup tool UI.
 
+    If an existing window is open,
+    it is closed first.
+
+    Returns:
+        None
+    """
     global window
 
     try:
@@ -107,9 +132,11 @@ def launch_ui():
         window.close()
         window.deleteLater()
 
-    except:
+    except Exception as error:
 
-        pass
+        print(
+            f"UI cleanup failed: {error}"
+        )
 
     window = CleanupWindow()
 
