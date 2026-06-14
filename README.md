@@ -37,6 +37,10 @@ Defmormer still being adjusted when using safe mode
 Possible Options to close window when done with tool
 a quick shelf button that Does safe mode regardless without the UI
 
+-DEMO-
+
+https://drexel0-my.sharepoint.com/my?id=%2Fpersonal%2Fkfn28%5Fdrexel%5Fedu%2FDocuments%2FClean%2Dup%20Tool%20Demo
+
 -HOW TO RUN-
 
 1. Copy the folder:
